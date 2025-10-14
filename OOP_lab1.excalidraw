@@ -3522,20 +3522,20 @@
       "index": "b1xV",
       "roundness": null,
       "seed": 1127835421,
-      "version": 319,
-      "versionNonce": 1034709629,
+      "version": 337,
+      "versionNonce": 1775369598,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1760445499362,
+      "updated": 1760454395120,
       "link": null,
       "locked": false,
-      "text": "The responsibilities:\nThe User object is the primary actor, it has content creation and authentication.\n\nThe Blog object is the main container,. It is responsible for holding a collection of posts and the blog's identity \n\nThe Post object represents a single unit of content. Its responsibility is to hold the article text and its related\ncomments.\n\nThe Comment object is the smallest unit, responsible for holding user feedback and has basic interaction like being\nedited.\n\nThese components work together in a hierarchy \nA User creates a Blog and Posts. The Blog aggregates the Posts, and each Post aggregates its Comments.\n\n",
+      "text": "The responsibilities:\nThe User object is the primary actor, it has content creation and authentication.\n\nThe Blog object is the main container,. It is responsible for holding a collection of posts and the blog's identity \n\nThe Post object represents a single unit of content. Its responsibility is to hold the article text and its related\ncomments.\n\nThe Comment object is the smallest unit, responsible for holding user feedback and has basic interaction like being\nedited.\n\nThese components work together in a hierarchy \nA User creates a Blog and Posts. The Blog composes the Posts, and each Post composes its Comments.\n\n",
       "fontSize": 4.17391304347826,
       "fontFamily": 6,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "The responsibilities:\nThe User object is the primary actor, it has content creation and authentication.\n\nThe Blog object is the main container,. It is responsible for holding a collection of posts and the blog's identity \n\nThe Post object represents a single unit of content. Its responsibility is to hold the article text and its related comments.\n\nThe Comment object is the smallest unit, responsible for holding user feedback and has basic interaction like being edited.\n\nThese components work together in a hierarchy \nA User creates a Blog and Posts. The Blog aggregates the Posts, and each Post aggregates its Comments.\n\n",
+      "originalText": "The responsibilities:\nThe User object is the primary actor, it has content creation and authentication.\n\nThe Blog object is the main container,. It is responsible for holding a collection of posts and the blog's identity \n\nThe Post object represents a single unit of content. Its responsibility is to hold the article text and its related comments.\n\nThe Comment object is the smallest unit, responsible for holding user feedback and has basic interaction like being edited.\n\nThese components work together in a hierarchy \nA User creates a Blog and Posts. The Blog composes the Posts, and each Post composes its Comments.\n\n",
       "autoResize": false,
       "lineHeight": 1.25
     },
@@ -5154,10 +5154,10 @@
     {
       "id": "HfKEfDxUOYPLEtaSw3Yq9",
       "type": "text",
-      "x": 1307.0310096822861,
-      "y": -434.6479368380963,
-      "width": 93.55490779123784,
-      "height": 24.999999999999993,
+      "x": 1304.649651403151,
+      "y": -435.0681765344143,
+      "width": 92.9689903177139,
+      "height": 19.498974463354664,
       "angle": 0,
       "strokeColor": "#6741d9",
       "backgroundColor": "#fefffe",
@@ -5171,8 +5171,8 @@
       "index": "b2N",
       "roundness": null,
       "seed": 1981226850,
-      "version": 470,
-      "versionNonce": 1014880610,
+      "version": 515,
+      "versionNonce": 1270761150,
       "isDeleted": false,
       "boundElements": [
         {
@@ -5180,16 +5180,16 @@
           "type": "arrow"
         }
       ],
-      "updated": 1760453494260,
+      "updated": 1760454356127,
       "link": null,
       "locked": false,
-      "text": "+ write_post(...)\n+ edit_comment(comment: Comment, new_text:\nstring\n+ login(password: string)\n+ logout()",
-      "fontSize": 3.9999999999999987,
+      "text": "+ create_post(title: string, content: string): Post\n+ create_comment(post: Post, text: string): Comment\n+ edit_comment(comment: Comment, new_text: string\n+ login(password: string)\n+ logout()",
+      "fontSize": 3.119835914136746,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "+ write_post(...)\n+ edit_comment(comment: Comment, new_text: string\n+ login(password: string)\n+ logout()",
+      "originalText": "+ create_post(title: string, content: string): Post\n+ create_comment(post: Post, text: string): Comment\n+ edit_comment(comment: Comment, new_text: string\n+ login(password: string)\n+ logout()",
       "autoResize": false,
       "lineHeight": 1.25
     },
@@ -5804,10 +5804,10 @@
     {
       "id": "uHNE9MWxSG6ouiE5OJH95",
       "type": "arrow",
-      "x": 1302.0310096822861,
-      "y": -422.2590479492075,
-      "width": 96.91196943298564,
-      "height": 142.25937428334896,
+      "x": 1299.649651403151,
+      "y": -425.4053514114631,
+      "width": 94.53061115385049,
+      "height": 145.40567774560452,
       "angle": 0,
       "strokeColor": "#6741d9",
       "backgroundColor": "#fefffe",
@@ -5821,11 +5821,11 @@
       "index": "b2c",
       "roundness": null,
       "seed": 1807966114,
-      "version": 1192,
-      "versionNonce": 2049916094,
+      "version": 1331,
+      "versionNonce": 469942014,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1760453675992,
+      "updated": 1760454356129,
       "link": null,
       "locked": false,
       "points": [
@@ -5834,16 +5834,16 @@
           0
         ],
         [
-          -48.33195152839903,
+          -47.14127238883134,
           0
         ],
         [
-          -48.33195152839903,
-          142.25937428334896
+          -47.14127238883134,
+          145.40567774560452
         ],
         [
-          -96.91196943298564,
-          142.25937428334896
+          -94.53061115385049,
+          145.40567774560452
         ]
       ],
       "lastCommittedPoint": null,
