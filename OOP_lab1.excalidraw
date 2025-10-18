@@ -5991,7 +5991,7 @@
       "version": 21,
       "versionNonce": 543212286,
       "isDeleted": false,
-      "boundElements": null,
+      "boundElements": [],
       "updated": 1760453297012,
       "link": null,
       "locked": false,
@@ -6046,7 +6046,7 @@
   "appState": {
     "gridSize": 20,
     "gridStep": 5,
-    "gridModeEnabled": true,
+    "gridModeEnabled": false,
     "viewBackgroundColor": "#ffffff",
     "lockedMultiSelections": {}
   },
