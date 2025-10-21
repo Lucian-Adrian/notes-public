@@ -202,10 +202,10 @@
     {
       "id": "RWUt4kHpldVSoPYVci-9b",
       "type": "text",
-      "x": 805.7815221944642,
-      "y": -921.1153695344715,
-      "width": 205.13662719726562,
-      "height": 36.7914667458771,
+      "x": 807.0002965851867,
+      "y": -921.6028792907605,
+      "width": 208.07019715169284,
+      "height": 49.0552889945028,
       "angle": 0,
       "strokeColor": "#6741d9",
       "backgroundColor": "#fefffe",
@@ -219,21 +219,21 @@
       "index": "b0AV",
       "roundness": null,
       "seed": 1342924157,
-      "version": 162,
-      "versionNonce": 727154333,
+      "version": 370,
+      "versionNonce": 732110600,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1760450969069,
+      "updated": 1761038507305,
       "link": null,
       "locked": false,
-      "text": "+ create_post(post_content: string): post\n+ publish_blog()\n+ get_all_posts(): list<post>",
+      "text": "+ create_post(post_content: string): post\n+ publish_blog()\n+ get_posts(page_number: int,\nposts_per_page: int): list<post>",
       "fontSize": 9.81105779890056,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "+ create_post(post_content: string): post\n+ publish_blog()\n+ get_all_posts(): list<post>",
-      "autoResize": true,
+      "originalText": "+ create_post(post_content: string): post\n+ publish_blog()\n+ get_posts(page_number: int, posts_per_page: int): list<post>",
+      "autoResize": false,
       "lineHeight": 1.25
     },
     {
@@ -4908,8 +4908,8 @@
       "type": "text",
       "x": 1104.8520759276885,
       "y": -427.12500000000006,
-      "width": 94.09942626953126,
-      "height": 16.875000000000007,
+      "width": 88.19071960449219,
+      "height": 16.875000000000004,
       "angle": 0,
       "strokeColor": "#6741d9",
       "backgroundColor": "#fefffe",
@@ -4923,8 +4923,8 @@
       "index": "b2H",
       "roundness": null,
       "seed": 1694806242,
-      "version": 302,
-      "versionNonce": 1775604542,
+      "version": 318,
+      "versionNonce": 813498120,
       "isDeleted": false,
       "boundElements": [
         {
@@ -4932,16 +4932,16 @@
           "type": "arrow"
         }
       ],
-      "updated": 1760453285812,
+      "updated": 1761038590287,
       "link": null,
       "locked": false,
-      "text": "+ create_post(post_content: string): post\n+ publish_blog()\n+ get_all_posts(): list<post>",
+      "text": "+ add_post(post_content: string): post\n+ publish_blog()\n+ get_all_posts(): list<post>",
       "fontSize": 4.500000000000001,
       "fontFamily": 5,
       "textAlign": "left",
       "verticalAlign": "top",
       "containerId": null,
-      "originalText": "+ create_post(post_content: string): post\n+ publish_blog()\n+ get_all_posts(): list<post>",
+      "originalText": "+ add_post(post_content: string): post\n+ publish_blog()\n+ get_all_posts(): list<post>",
       "autoResize": true,
       "lineHeight": 1.25
     },
@@ -5741,9 +5741,9 @@
     {
       "id": "Y_AKaUw8298DE-5LHZCEz",
       "type": "arrow",
-      "x": 1160,
+      "x": 1156.537142473156,
       "y": -400,
-      "width": 0.1326266431331078,
+      "width": 3.5954841699769986,
       "height": 100.16886521117897,
       "angle": 0,
       "strokeColor": "#6741d9",
@@ -5758,11 +5758,11 @@
       "index": "b2b",
       "roundness": null,
       "seed": 1158622178,
-      "version": 622,
-      "versionNonce": 84144190,
+      "version": 637,
+      "versionNonce": 228056584,
       "isDeleted": false,
       "boundElements": [],
-      "updated": 1760453526664,
+      "updated": 1761038590289,
       "link": null,
       "locked": false,
       "points": [
@@ -5771,7 +5771,15 @@
           0
         ],
         [
-          0.1326266431331078,
+          0,
+          47.45943260558943
+        ],
+        [
+          3.5954841699769986,
+          47.45943260558943
+        ],
+        [
+          3.5954841699769986,
           100.16886521117897
         ]
       ],
